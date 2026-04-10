@@ -1,0 +1,61 @@
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven build output
+target/
+
+# IDE files - IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE files - Eclipse
+.classpath
+.project
+.settings/
+
+# IDE files - VS Code
+.vscode/
+
+# IDE files - NetBeans
+nbproject/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Upload directories (runtime generated)
+uploads/
+
+# Smart Tomcat
+.SmartTomcat/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar

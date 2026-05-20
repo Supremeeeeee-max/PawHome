@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * Service class encapsulating business logic for Adoption operations.
+ * Service layer update for Chunk 2
  */
 public class AdoptionService {
 

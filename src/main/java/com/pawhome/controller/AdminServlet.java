@@ -195,7 +195,7 @@ public class AdminServlet extends HttpServlet {
         }
 
         // FIXED: Always forward to JSP. Never redirect. This prevents the loop.
-        request.getRequestDispatcher("/admin/dashboard.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/dashboard.jsp").forward(request, response);
     }
 
     // ============= ANIMAL MANAGEMENT =============
@@ -214,7 +214,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("animals", new ArrayList<>());
             request.setAttribute("error", "Failed to load animals: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/animals.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/animals.jsp").forward(request, response);
     }
 
     private void showAddAnimalForm(HttpServletRequest request, HttpServletResponse response)
@@ -224,7 +224,7 @@ public class AdminServlet extends HttpServlet {
         } catch (Exception e) {
             request.setAttribute("categories", new ArrayList<>());
         }
-        request.getRequestDispatcher("/admin/animal-form.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/animal-form.jsp").forward(request, response);
     }
 
     private void showEditAnimalForm(HttpServletRequest request, HttpServletResponse response)
@@ -356,7 +356,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("pendingUsers", new ArrayList<>());
             request.setAttribute("error", "Failed to load users: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/users.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/users.jsp").forward(request, response);
     }
 
     private void approveUser(HttpServletRequest request, HttpServletResponse response)
@@ -388,7 +388,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("applications", new ArrayList<>());
             request.setAttribute("error", "Failed to load applications: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/applications.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/applications.jsp").forward(request, response);
     }
 
     private void approveApplication(HttpServletRequest request, HttpServletResponse response)
@@ -419,7 +419,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("categories", new ArrayList<>());
             request.setAttribute("error", "Failed to load categories: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/categories.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/categories.jsp").forward(request, response);
     }
 
     private void addCategory(HttpServletRequest request, HttpServletResponse response)
@@ -464,7 +464,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("pendingApps", 0);
             request.setAttribute("error", "Failed to load reports: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/reports.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/reports.jsp").forward(request, response);
     }
 
     // ============= INQUIRIES =============
@@ -477,7 +477,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("inquiries", new ArrayList<>());
             request.setAttribute("error", "Failed to load inquiries: " + e.getMessage());
         }
-        request.getRequestDispatcher("/admin/inquiries.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/inquiries.jsp").forward(request, response);
     }
 
     private void deleteInquiry(HttpServletRequest request, HttpServletResponse response)

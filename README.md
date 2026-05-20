@@ -115,12 +115,12 @@ Deploy the generated `target/PawHome.war` to Tomcat's `webapps/` directory, or u
 ## Team Members
 
 | Name              | Student ID | Role                              |
-|-------------------|----|-----------------------------------|
+|-------------------|------------|-----------------------------------|
 | [Suprim Bista]    | [24046115] | [Backend]                         |
 | [Kunald Rai]      | [24046170] | [Backend]                         |
-| [Lija Niraula]    | [] | [Backend and Database Connection] |
+| [Lija Niraula]    | [24045914] | [Backend and Database Connection] |
 | [Asmita Bhattrai] | [24046161] | [Frontend]                        |
-| [Yuna Karki]      | [] | [Frontend]                        |
+| [Yuna Karki]      | [24046149] | [Frontend]                        |
 
 
 ## License

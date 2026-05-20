@@ -87,7 +87,7 @@ public class UserPortalServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("error", "An error occurred: " + e.getMessage());
-            request.getRequestDispatcher("/user/home.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/user/home.jsp").forward(request, response);
         }
     }
 
@@ -184,7 +184,7 @@ public class UserPortalServlet extends HttpServlet {
             return;
         }
 
-        request.getRequestDispatcher("/user/animal-detail.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/user/animal-detail.jsp").forward(request, response);
     }
 
     // ============= ADOPTION APPLICATION =============
@@ -221,7 +221,7 @@ public class UserPortalServlet extends HttpServlet {
             request.setAttribute("applications", new ArrayList<>());
             e.printStackTrace();
         }
-        request.getRequestDispatcher("/user/applications.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/user/applications.jsp").forward(request, response);
     }
 
     // ============= WISHLIST =============
@@ -236,7 +236,7 @@ public class UserPortalServlet extends HttpServlet {
             request.setAttribute("wishlistItems", new ArrayList<>());
             e.printStackTrace();
         }
-        request.getRequestDispatcher("/user/wishlist.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/user/wishlist.jsp").forward(request, response);
     }
 
     private void addToWishlist(HttpServletRequest request, HttpServletResponse response)
@@ -272,7 +272,7 @@ public class UserPortalServlet extends HttpServlet {
             request.setAttribute("error", "Failed to load profile: " + e.getMessage());
             e.printStackTrace();
         }
-        request.getRequestDispatcher("/user/profile.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/user/profile.jsp").forward(request, response);
     }
 
     private void updateProfile(HttpServletRequest request, HttpServletResponse response)

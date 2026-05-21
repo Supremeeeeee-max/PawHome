@@ -37,7 +37,7 @@
                 <div class="alert alert-success"><%= request.getParameter("success") %></div>
             <% } %>
 
-            <!-- Search & Filter -->
+            <!-- Search and Filter -->
             <form action="${pageContext.request.contextPath}/user/home" method="get">
                 <div class="search-bar">
                     <input type="text" name="search" class="form-control" placeholder="Search by name, breed, species, or location..."

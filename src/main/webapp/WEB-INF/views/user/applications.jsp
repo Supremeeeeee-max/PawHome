@@ -23,6 +23,7 @@
         </div>
     </nav>
 
+    // animal adoption application
     <div class="page-wrapper">
         <div class="container">
             <h2 class="mb-2">My Adoption Applications</h2>

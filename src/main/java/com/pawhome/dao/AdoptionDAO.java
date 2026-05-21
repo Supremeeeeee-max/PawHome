@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * Data Access Object for Adoption Application operations.
- * DAO layer update for Chunk 1
  */
 public class AdoptionDAO {
 

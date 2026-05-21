@@ -23,7 +23,7 @@ public class AdoptionService {
 
     /**
      * Submits a new adoption application.
-     * Returns error message or null on success.
+     * Returns an error message or null on success.
      */
     public String applyForAdoption(int userId, int animalId, String reason) {
         // Check if user already applied for this animal

@@ -40,6 +40,7 @@ public class UserPortalServlet extends HttpServlet {
     private CategoryDAO categoryDAO;
     private static final String UPLOAD_DIR = "uploads" + File.separator + "profiles";
 
+    // constructor
     @Override
     public void init() throws ServletException {
         animalService = new AnimalService();

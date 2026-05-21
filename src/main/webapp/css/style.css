@@ -220,15 +220,15 @@ h4 { font-size: 1.125rem; font-weight: 600; }
 /* === Cards === */
 .card {
     background: var(--white);
-    border: 1px solid var(--gray-border);
-    border-radius: 16px;
+    border: none;
+    border-radius: 18px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: all 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 .card-header {
     padding: 1rem 1.25rem;
@@ -355,6 +355,8 @@ h4 { font-size: 1.125rem; font-weight: 600; }
     background: #f59e0b;
     color: white !important;
     border: none;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
 }
 
 .btn-primary:hover {
@@ -876,8 +878,11 @@ select.form-control {
     }
 
     .nav-links a {
-        padding: 0.75rem 1rem;
-        border-radius: var(--radius-sm);
+        color: #2e7d5b;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+        transition: color 0.2s;
     }
 
     .nav-links a:hover {
@@ -997,74 +1002,22 @@ select.form-control {
         font-size: 1.5rem;
     }
 
-    /* ============================================
-   MOBILE RESPONSIVE FIXES
-============================================ */
-    @media (max-width: 768px) {
-
-        .admin-layout {
-            flex-direction: column;
+    /* Small mobile */
+    @media (max-width: 480px) {
+        .container {
+            padding: 0 1rem;
         }
 
-        .sidebar {
-            width: 100%;
-            min-width: 100%;
-            border-right: none;
-            border-bottom: 1px solid var(--gray-border);
+        h1 {
+            font-size: 1.5rem;
         }
 
-        .sidebar-menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            padding: 10px;
+        h2 {
+            font-size: 1.25rem;
         }
 
-        .sidebar-menu li {
-            list-style: none;
-        }
-
-        .sidebar-menu li a {
-            border-left: none;
-            border-radius: 8px;
-            padding: 10px 14px;
-        }
-
-        .admin-content {
-            padding: 1rem;
-        }
-
-        .stats-grid {
-            flex-direction: column;
-        }
-
-        .animal-card {
-            flex: 0 0 100%;
-        }
-
-        .table {
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-        .nav-links {
-            width: 100%;
-            background: white;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.3rem;
-        }
-
-        .hero p {
-            font-size: 1rem;
-        }
-
-        .stats-grid {
-            flex-direction: column;
+        .stats-grid .stat-card .stat-number {
+            font-size: 1.5rem;
         }
     }
-
 }

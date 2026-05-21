@@ -243,7 +243,7 @@ public class AdminServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/admin/animals?error=Error+loading+animal");
             return;
         }
-        request.getRequestDispatcher("/admin/animal-form.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/admin/animal-form.jsp").forward(request, response);
     }
 
     private void addAnimal(HttpServletRequest request, HttpServletResponse response)
@@ -263,7 +263,7 @@ public class AdminServlet extends HttpServlet {
             request.setAttribute("error", "Failed to add animal. Please try again.");
             try { request.setAttribute("categories", categoryDAO.findAll()); }
             catch (Exception e) { request.setAttribute("categories", new ArrayList<>()); }
-            request.getRequestDispatcher("/admin/animal-form.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/admin/animal-form.jsp").forward(request, response);
         }
     }
 
@@ -291,7 +291,7 @@ public class AdminServlet extends HttpServlet {
             try { request.setAttribute("categories", categoryDAO.findAll()); }
             catch (Exception e) { request.setAttribute("categories", new ArrayList<>()); }
             request.setAttribute("editMode", true);
-            request.getRequestDispatcher("/admin/animal-form.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/admin/animal-form.jsp").forward(request, response);
         }
     }
 

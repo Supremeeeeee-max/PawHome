@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <!-- Adoption Application Form -->
+            <!-- The Adoption Application Form -->
             <% if ("Available".equals(animal.getAvailabilityStatus()) && !hasApplied) { %>
             <div class="card mt-3">
                 <div class="card-header"><h3 style="margin:0;">Apply to Adopt <%= animal.getName() %></h3></div>

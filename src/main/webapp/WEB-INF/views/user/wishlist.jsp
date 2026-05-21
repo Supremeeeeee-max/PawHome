@@ -66,6 +66,7 @@
         </div>
     </div>
 
+    // footer
     <footer class="footer"><p>&copy; 2026 PawHome. All rights reserved.</p></footer>
     <script src="${pageContext.request.contextPath}/js/main.js"></script>
 </body>

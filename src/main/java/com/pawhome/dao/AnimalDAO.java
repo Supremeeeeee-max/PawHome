@@ -13,7 +13,7 @@ import java.util.List;
 public class AnimalDAO {
 
     /**
-     * Inserts a new animal into the database.
+     * Inserts a new animal into the database pawhome.
      */
     public boolean insert(Animal animal) {
         String sql = "INSERT INTO animals (name, species, breed, age, gender, health_status, description, image_path, shelter_location, intake_date, availability_status, category_id, added_by) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";

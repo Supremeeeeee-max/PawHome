@@ -9,7 +9,7 @@ import java.util.List;
  * Service class encapsulating business logic for Animal operations.
  */
 public class AnimalService {
-
+    // private variable
     private AnimalDAO animalDAO;
 
     public AnimalService() {
